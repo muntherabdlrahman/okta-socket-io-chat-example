@@ -3,13 +3,13 @@ const OktaJwtVerifier = require('@okta/jwt-verifier');
 const okta = require('@okta/okta-sdk-nodejs');
 
 const jwtVerifier = new OktaJwtVerifier({
-  clientId: '{yourClientID',
-  issuer: 'https://{yourOktaDomain}/oauth2/default',
+  clientId: '0oa23g6kryL7I8ISv5d7',
+  issuer: 'https://https://dev-09955274.okta.com/oauth2/default',
 });
 
 const oktaClient = new okta.Client({
-  orgUrl: 'https://{yourOktaDomain}',
-  token: '{yourOktaAPIToken}',
+  orgUrl: 'https://https://dev-09955274.okta.com',
+  token: '000BG-_A9CSNuwx8U3LcFRBCUNqVjbaruDFHiTyx_E',
 });
 
 async function authHandler(socket, next) {
